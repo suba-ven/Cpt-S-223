@@ -1,4 +1,4 @@
-# CPTS-223-Examples
+# Derived from CPTS-223-Examples
 
 ![CMake compilation](https://github.com/DataOceanLab/CPTS-223-Examples/workflows/CMake%20compilation/badge.svg)
 
