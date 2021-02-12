@@ -56,7 +56,7 @@ int main()
 	int game_state = 0;
 
 	fstream dataFile;
-	dataFile.open("//PA1//commands.csv", ios::in | ios::out | ios::app);
+	dataFile.open("commands.csv", ios::in | ios::out | ios::app);
 
 	if (!dataFile.is_open()) {
 		cout<<"Could not open file"<<endl;
@@ -324,7 +324,7 @@ int main()
 	command,”description”.*/
 		dataFile.close();
 		Node <string, string>* current = commands.getHead();
-		dataFile.open("//PA1//commands.csv", fstream::out | fstream::trunc);
+		dataFile.open("commands.csv", fstream::out | fstream::trunc);
 		while (current != nullptr) {
 			dataFile << current->getCommand() << ','<<'\"' << current->getDesc() << '\"'<<endl;
 			current = current->getNext();
@@ -336,7 +336,7 @@ int main()
 		called profiles.csv. If another profile exists that matches the name, then it should be
 		completely overwritten with the new points. The format for a profile is name,points.*/
 
-		ofstream outFile("//PA1//profiles.csv");
+		ofstream outFile("profiles.csv");
 		for (int i = 0; i < 29; i++) {
 			if ((profile_array[i].user_name).compare("") != 0) {
 				outFile << profile_array[i].user_name << "," << profile_array[i].points << endl;
