@@ -1,25 +1,2 @@
-# Derived from CPTS-223-Examples
-
-![CMake compilation](https://github.com/DataOceanLab/CPTS-223-Examples/workflows/CMake%20compilation/badge.svg)
-
-## Compile in a terminal
-
-All commands are supposed to be run in a Ubuntu terminal
-
-1. Go to the example directory you want. For example, `cd cmake-example`
-2. Create a directory for the build if you didn't do it before: `mkdir build`
-3. Ask cmake to configure the project: `cmake -B build -S .`  After this, you will see some cmake config files in the `build` folder.
-4. Ask cmake to build the project: `cmake --build build`  After this, you will see the executable program in the `build` folder
-5. Run the executable program. For example, `./build/CPTS_223_CMake_Example`
-
-If anything strange happens during the compilation, you can simply delete the `build` folder and see whether the problem is gone: `rm -r build`
-
-## Compile in an IDE
-
-Use an IDE such as CLion to open the example directory (the one contains the CMakeLists.txt) and run it in the IDE
-
-## Use GitHub Action to auto-compile your build
-
-1. Open this file in this folder: `github/workflows/cmake.yml` and follow the example to write your own GitHub action
-2. Click the "Action" tag on this GitHub page and see the result of your GitHub action
-3. You can update the badge in this README file to show your Action status
+# I had some confusion on Problem 3
+I understand that the node had to be split, but wasn't fully sure on how to go about sorting the data afterwards. We only covered 3 cases for insertion in class, and none of them went into how to split the root node. Please take this into account when grading 3a and 3b! Thank you.
