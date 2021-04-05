@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
     }
 
     //(50 pts) Map Scenario 1: Search based on UserName
-    //(10 pts) Create a new std::map
+    //(10 pts) Create a new std::map 
     map<string, TwitterData> scenario1;
     //(10 pts) Insert all Twitter data into the std::map. Use a proper data member in 
     //TwitterData class (UserName?) to be the key. Use TwitterData class as the value.
